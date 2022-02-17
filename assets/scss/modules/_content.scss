@@ -27,15 +27,16 @@
     }
 
     &--fixed {
+        background: url(../img/src/bg2.jpg) no-repeat center center / cover variables.$color-bg2;
         position: fixed;
         top: 0;
         left: 0;
-        background: url(../img/src/bg2.jpg) no-repeat center center / cover variables.$color-bg2;
+        overflow: auto;
 
         &:before {
             background: rgba(variables.$color-black, .6);
             content: "";
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             bottom: 0;

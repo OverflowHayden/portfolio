@@ -1,19 +1,13 @@
 @use "../setup/variables";
 
 footer {
-	text-align: center;
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	width: 100%;
-	padding: 20px;
+    left: 0;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
 
-	@media (max-width: variables.$screen-sm - 1) {
-		position: static;
-	}
-
-	small {
-		display: block;
-		margin-bottom: 20px;
-	}
+    small {
+        display: block;
+        margin-bottom: 2rem;
+    }
 }

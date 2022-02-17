@@ -1,5 +1,6 @@
 import Konami from 'konami';
 import anime from 'animejs';
+import Iconify from '@iconify/iconify';
 
 let _nyan = 0;
 let __nyan = [[
