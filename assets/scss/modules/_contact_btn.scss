@@ -1,0 +1,15 @@
+@use "../setup/variables";
+
+.contact-btn {
+    display: inline-block;
+    color: variables.$color-button;
+    border: .2rem solid variables.$color-button;
+    padding: .8rem 1.8rem;
+    text-decoration: none;
+
+    &:hover {
+        background: variables.$color-button;
+        color: variables.$color-white;
+        text-decoration: none;
+    }
+}

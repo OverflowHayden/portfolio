@@ -1,0 +1,27 @@
+.idea
+.project
+assets/img/min
+assets/js/min
+assets/css/style.css
+style.css.map
+
+# OS generated files
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/unplugged
+!.yarn/versions

@@ -1,0 +1,68 @@
+@use "../setup/variables";
+
+.content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &__inner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &--intro {
+        will-change: transform;
+        height: 200vh;
+        z-index: 100;
+    }
+
+    &--intro &__inner {
+        background: variables.$color-bg;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: url(../img/src/bg2.jpg) no-repeat center center / cover variables.$color-bg2;
+
+        &:before {
+            background: rgba(variables.$color-black, .6);
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+
+    &--fixed &__inner {
+        max-width: 117rem;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        text-align: left;
+        z-index: 1;
+
+        @media (max-width: variables.$screen-sm - 1) {
+            display: block;
+            overflow: auto;
+        }
+
+        small {
+            font-size: 60%;
+        }
+
+        ul {
+            padding-left: 2rem;
+        }
+    }
+}

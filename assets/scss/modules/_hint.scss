@@ -1,0 +1,42 @@
+.hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(2rem);
+    opacity: 0;
+    user-select: none;
+    animation: slidein 1s ease 5s 1 normal forwards;
+
+    &--second {
+        @extend .hint;
+
+        bottom: 5rem;
+        animation: slidein 1s ease 20s 1 normal forwards;
+    }
+
+    @media (pointer: coarse) {
+        text-align: left;
+        text-indent: -999em;
+
+        &:after {
+            text-indent: 0;
+            display: block;
+            text-align: center;
+            content: attr(data-touch-content);
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
