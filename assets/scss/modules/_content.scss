@@ -20,6 +20,17 @@
         will-change: transform;
         height: 200vh;
         z-index: 100;
+
+        &:before {
+            background: variables.$color-bg;
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -2;
+        }
     }
 
     &--intro &__inner {
@@ -41,7 +52,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            z-index: 0;
+            z-index: -3;
         }
     }
 
