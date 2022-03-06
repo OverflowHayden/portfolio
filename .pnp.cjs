@@ -58,6 +58,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint", "npm:13.13.1"],
             ["stylelint-selector-bem-pattern", "npm:2.1.1"],
             ["stylelint-webpack-plugin", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:3.1.1"],
+            ["ts-loader", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:9.2.7"],
+            ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=493e53"],
             ["webfontloader", "npm:1.6.28"],
             ["webpack", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:5.69.1"],
             ["webpack-cli", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:4.9.2"]
@@ -2843,6 +2845,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint", "npm:13.13.1"],
             ["stylelint-selector-bem-pattern", "npm:2.1.1"],
             ["stylelint-webpack-plugin", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:3.1.1"],
+            ["ts-loader", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:9.2.7"],
+            ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=493e53"],
             ["webfontloader", "npm:1.6.28"],
             ["webpack", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:5.69.1"],
             ["webpack-cli", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:4.9.2"]
@@ -3026,6 +3030,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/enhanced-resolve-npm-5.9.0-7a2926f8d6-06435f5267.zip/node_modules/enhanced-resolve/",
           "packageDependencies": [
             ["enhanced-resolve", "npm:5.9.0"],
+            ["graceful-fs", "npm:4.2.9"],
+            ["tapable", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.9.2", {
+          "packageLocation": "./.yarn/cache/enhanced-resolve-npm-5.9.2-ffd6aeacc7-792b7a01ab.zip/node_modules/enhanced-resolve/",
+          "packageDependencies": [
+            ["enhanced-resolve", "npm:5.9.2"],
             ["graceful-fs", "npm:4.2.9"],
             ["tapable", "npm:2.2.1"]
           ],
@@ -8983,6 +8996,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ts-loader", [
+        ["npm:9.2.7", {
+          "packageLocation": "./.yarn/cache/ts-loader-npm-9.2.7-ad05b7b4f9-ef2c2a8e3c.zip/node_modules/ts-loader/",
+          "packageDependencies": [
+            ["ts-loader", "npm:9.2.7"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:9.2.7", {
+          "packageLocation": "./.yarn/__virtual__/ts-loader-virtual-1337f27ea0/0/cache/ts-loader-npm-9.2.7-ad05b7b4f9-ef2c2a8e3c.zip/node_modules/ts-loader/",
+          "packageDependencies": [
+            ["ts-loader", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:9.2.7"],
+            ["@types/typescript", null],
+            ["@types/webpack", null],
+            ["chalk", "npm:4.1.2"],
+            ["enhanced-resolve", "npm:5.9.2"],
+            ["micromatch", "npm:4.0.4"],
+            ["semver", "npm:7.3.5"],
+            ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=493e53"],
+            ["webpack", "virtual:9fb6a448296f75fcdb0ccda95daeff678d80875506e534caac67a5f11d73da238771e3ea0ae8514754ffd39612ff176f13208f00ea3aa1248043bf30f015bb23#npm:5.69.1"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "@types/webpack",
+            "typescript",
+            "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tunnel-agent", [
         ["npm:0.6.0", {
           "packageLocation": "./.yarn/cache/tunnel-agent-npm-0.6.0-64345ab7eb-05f6510358.zip/node_modules/tunnel-agent/",
@@ -9029,6 +9072,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["typedarray-to-buffer", "npm:3.1.5"],
             ["is-typedarray", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=493e53", {
+          "packageLocation": "./.yarn/cache/typescript-patch-c02f09770a-efb83260a2.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=493e53"]
           ],
           "linkType": "HARD",
         }]

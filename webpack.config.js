@@ -3,15 +3,23 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const config = {
-    entry: ['./assets/js/src/app.js', './assets/scss/style.scss'],
+    entry: {
+        app: './assets/js/src/app.js',
+        noise: './assets/js/src/noise.js',
+        shift: './assets/js/src/shift.js',
+        style: './assets/scss/style.scss',
+    },
     output: {
-        filename: 'assets/js/min/app.min.js',
+        filename: 'assets/js/min/[name].js',
         path: __dirname,
     },
     optimization: {
         minimizer: [
             new CssMinimizerPlugin(),
         ],
+    },
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"]
     },
     module: {
 
@@ -59,6 +67,10 @@ const config = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.tsx?$/,
+                loader: require.resolve('ts-loader'),
             },
             {
                 test: /\.js$/,

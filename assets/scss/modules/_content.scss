@@ -23,7 +23,7 @@
     }
 
     &--intro &__inner {
-        background: variables.$color-bg;
+        background: rgba(variables.$color-bg, .4);
     }
 
     &--fixed {
