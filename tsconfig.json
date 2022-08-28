@@ -1,11 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "./assets/js/min/",
-    "noImplicitAny": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
     "module": "esnext",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "noImplicitThis": false,
+    "paths": {
+      "~/*": ["/../src/*"]
+    },
+    "types": [
+      "node"
+    ]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json"}]
 }
