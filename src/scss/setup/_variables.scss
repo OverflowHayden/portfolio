@@ -1,0 +1,29 @@
+/* ---------------------------------------------- //
+ * Colors
+// ---------------------------------------------- */
+$color-primary: red;
+
+$color-bg: #333;
+$color-bg2: #666;
+$color-main: #c0c0c0;
+$color-title: forestgreen;
+$color-years: #e52d27;
+$color-button: #aaa;
+
+$color-white:                #fff;
+$color-black:                #000;
+
+
+/* ---------------------------------------------- //
+ * Fonts
+/* ---------------------------------------------- */
+
+$font_base:                       'Cera';
+
+// breakpoints
+$screen-xs:                       480px;
+$screen-sm:                       768px;
+$screen-md:                       1023px;
+$screen-lg-min:                   1024px;
+$screen-lg-max:                   1170px;
+$screen-xl:                       1171px;

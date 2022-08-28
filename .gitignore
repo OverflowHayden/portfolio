@@ -1,8 +1,8 @@
 .idea
 .project
-assets/img/min
-assets/js/min
-assets/css/style.css
+public/min
+src/ts/min
+src/css/style.css
 style.css.map
 
 # OS generated files

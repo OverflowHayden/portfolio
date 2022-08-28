@@ -1,9 +1,0 @@
-@use "../setup/variables";
-
-main {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    color: variables.$color-main;
-}
